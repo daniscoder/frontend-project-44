@@ -15,6 +15,7 @@ export default (name) => {
   while (answers_num < max_answers) {
     const random_int = getRandomInt(max_random_int);
     console.log(`Question: ${random_int}`);
+
     const answer = readlineSync.question("Your answer: ");
     const even_number = Number(random_int % 2 === 0);
     if (answers.indexOf(answer) === even_number) {
