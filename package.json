@@ -5,7 +5,7 @@
   "description": "[![Actions Status](https://github.com/daniscoder/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/daniscoder/frontend-project-44/actions)",
   "bin": {
     "brain-games": "bin/brain-games.js",
-    "brain-even": "bin/brain-even.js"
+    "brain-even": "bin/brain-even_.js"
   },
   "main": "index.js",
   "scripts": {
