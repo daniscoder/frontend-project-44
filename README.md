@@ -13,3 +13,7 @@
 ### Demonstration of the game "Calculator":
 
 [![asciicast](https://asciinema.org/a/NndENqKtPIbXM6Ucnbj6EEDV6.svg)](https://asciinema.org/a/NndENqKtPIbXM6Ucnbj6EEDV6)
+
+### Demonstration of the game "GCD":
+
+[![asciicast](https://asciinema.org/a/oyPq2UzceMnM0bBh7jys8zEK1.svg)](https://asciinema.org/a/oyPq2UzceMnM0bBh7jys8zEK1)
