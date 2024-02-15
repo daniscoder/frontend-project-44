@@ -23,5 +23,5 @@ const getQuestion = () => {
 };
 
 export default () => {
-  console.log(index('What is the result of the expression?', getQuestion));
+  console.log(index("What is the result of the expression?", getQuestion));
 };

@@ -13,5 +13,10 @@ const getQuestion = () => {
 };
 
 export default () => {
-  console.log(index('Answer "yes" if the number is even, otherwise answer "no".', getQuestion));
+  console.log(
+    index(
+      'Answer "yes" if the number is even, otherwise answer "no".',
+      getQuestion,
+    ),
+  );
 };
