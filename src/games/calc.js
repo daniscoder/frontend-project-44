@@ -1,13 +1,13 @@
-import { operations, getRandomInt } from "../helpers.js";
-import index from "../index.js";
+import { operations, getRandomInt } from '../helpers.js';
+import index from '../index.js';
 
 const applyOperation = (a, b, operation) => {
   switch (operation) {
-    case "+":
+    case '+':
       return a + b;
-    case "-":
+    case '-':
       return a - b;
-    case "*":
+    case '*':
       return a * b;
     default:
       return a / b;
@@ -21,5 +21,5 @@ const getQuestion = () => {
 };
 
 export default () => {
-  console.log(index("What is the result of the expression?", getQuestion));
+  console.log(index('What is the result of the expression?', getQuestion));
 };

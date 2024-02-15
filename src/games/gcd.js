@@ -1,5 +1,5 @@
-import { getRandomInt } from "../helpers.js";
-import index from "../index.js";
+import { getRandomInt } from '../helpers.js';
+import index from '../index.js';
 
 const gcd = (a, b) => {
   if (!b) {
@@ -15,6 +15,6 @@ const getQuestion = () => {
 
 export default () => {
   console.log(
-    index("Find the greatest common divisor of given numbers.", getQuestion),
+    index('Find the greatest common divisor of given numbers.', getQuestion),
   );
 };

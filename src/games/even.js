@@ -1,13 +1,9 @@
-import { answersNoYes, getRandomInt } from "../helpers.js";
-import index from "../index.js";
-
-const even = (random_int) => {
-  return answersNoYes[Number(random_int % 2 === 0)];
-};
+import { answersNoYes, getRandomInt } from '../helpers.js';
+import index from '../index.js';
 
 const getQuestion = () => {
-  const random_int = getRandomInt() + 1;
-  return [random_int, even(random_int)];
+  const randomInt = getRandomInt() + 1;
+  return [randomInt, answersNoYes[Number(randomInt % 2 === 0)]];
 };
 
 export default () => {

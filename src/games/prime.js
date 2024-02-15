@@ -1,5 +1,5 @@
-import { answersNoYes, getRandomInt } from "../helpers.js";
-import index from "../index.js";
+import { answersNoYes, getRandomInt } from '../helpers.js';
+import index from '../index.js';
 
 const isPrime = (num) => {
   for (let i = 2, s = Math.sqrt(num); i <= s; i += 1) {

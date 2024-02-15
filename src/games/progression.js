@@ -1,5 +1,5 @@
-import { getRandomInt } from "../helpers.js";
-import index from "../index.js";
+import { getRandomInt } from '../helpers.js';
+import index from '../index.js';
 
 const getQuestion = () => {
   const progression = [getRandomInt(50)];
@@ -7,13 +7,13 @@ const getQuestion = () => {
   for (let i = 0; i < 9; i += 1) {
     progression.push(progression[i] + diff);
   }
-  const index = getRandomInt(progression.length);
-  const hiddenElem = progression[index];
-  progression[index] = "..";
+  const hiddenElemIndex = getRandomInt(progression.length);
+  const hiddenElem = progression[hiddenElemIndex];
+  progression[hiddenElemIndex] = '..';
 
-  return [progression.join(" "), String(hiddenElem)];
+  return [progression.join(' '), String(hiddenElem)];
 };
 
 export default () => {
-  console.log(index("What number is missing in the progression?", getQuestion));
+  console.log(index('What number is missing in the progression?', getQuestion));
 };
