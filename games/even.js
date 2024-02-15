@@ -1,5 +1,4 @@
 import getRandomInt from "../src/get-random-int.js";
-import cli from "../src/cli.js";
 import index from "../src/index.js";
 
 const answers = ["no", "yes"];
@@ -14,9 +13,5 @@ const getQuestion = () => {
 };
 
 export default () => {
-  const name = cli();
-
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
-
-  console.log(index(name, getQuestion));
+  console.log(index('Answer "yes" if the number is even, otherwise answer "no".', getQuestion));
 };

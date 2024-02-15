@@ -1,9 +1,12 @@
 import readlineSync from "readline-sync";
+import cli from "./cli.js";
 
-export default (name, getQuestion) => {
+export default (gameQuestion, getQuestion) => {
+  const name = cli();
+  console.log(gameQuestion);
+
   const max_rounds = 3;
   let num = 0;
-
   while (num < max_rounds) {
     const [question, correctAnswer] = getQuestion();
     console.log(`Question: ${question}`);

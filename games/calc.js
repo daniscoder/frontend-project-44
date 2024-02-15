@@ -1,5 +1,4 @@
 import getRandomInt from "../src/get-random-int.js";
-import cli from "../src/cli.js";
 import index from "../src/index.js";
 
 const operations = ["+", "-", "*"];
@@ -24,7 +23,5 @@ const getQuestion = () => {
 };
 
 export default () => {
-  const name = cli();
-  console.log("What is the result of the expression?");
-  console.log(index(name, getQuestion));
+  console.log(index('What is the result of the expression?', getQuestion));
 };
