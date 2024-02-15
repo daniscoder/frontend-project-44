@@ -3,7 +3,7 @@ import index from "../src/index.js";
 
 const operations = ["+", "-", "*"];
 
-const getCorrectAnswer = (a, b, operation) => {
+const applyOperation = (a, b, operation) => {
   switch (operation) {
     case "+":
       return a + b;
@@ -19,7 +19,7 @@ const getCorrectAnswer = (a, b, operation) => {
 const getQuestion = () => {
   const [a, b] = [getRandomInt(), getRandomInt()];
   const operation = operations[getRandomInt(operations.length)];
-  return [`${a} ${operation} ${b}`, String(getCorrectAnswer(a, b, operation))];
+  return [`${a} ${operation} ${b}`, String(applyOperation(a, b, operation))];
 };
 
 export default () => {

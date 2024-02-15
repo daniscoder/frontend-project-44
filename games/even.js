@@ -3,13 +3,13 @@ import index from "../src/index.js";
 
 const answers = ["no", "yes"];
 
-const getCorrectAnswer = (random_int) => {
+const even = (random_int) => {
   return answers[Number(random_int % 2 === 0)];
 };
 
 const getQuestion = () => {
   const random_int = getRandomInt() + 1;
-  return [random_int, getCorrectAnswer(random_int)];
+  return [random_int, even(random_int)];
 };
 
 export default () => {
