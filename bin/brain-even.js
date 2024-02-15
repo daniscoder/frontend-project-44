@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-import cli from "../src/cli.js";
-import parityCheck from "../src/parity-check.js";
+import even from "../games/even.js";
 
-const name = cli();
-parityCheck(name);
+even();
