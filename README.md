@@ -17,3 +17,7 @@
 ### Demonstration of the game "GCD":
 
 [![asciicast](https://asciinema.org/a/oyPq2UzceMnM0bBh7jys8zEK1.svg)](https://asciinema.org/a/oyPq2UzceMnM0bBh7jys8zEK1)
+
+### Demonstration of the game "Prime":
+
+[![asciicast](https://asciinema.org/a/lYkgrSCumrlKKULZ6bojVCKsM.svg)](https://asciinema.org/a/lYkgrSCumrlKKULZ6bojVCKsM)
