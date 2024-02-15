@@ -1,7 +1,5 @@
-import getRandomInt from "../src/get-random-int.js";
-import index from "../src/index.js";
-
-const operations = ["+", "-", "*"];
+import { operations, getRandomInt } from "../helpers.js";
+import index from "../index.js";
 
 const applyOperation = (a, b, operation) => {
   switch (operation) {

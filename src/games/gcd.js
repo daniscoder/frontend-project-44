@@ -1,5 +1,5 @@
-import getRandomInt from "../src/get-random-int.js";
-import index from "../src/index.js";
+import { getRandomInt } from "../helpers.js";
+import index from "../index.js";
 
 const gcd = (a, b) => {
   if (!b) {
