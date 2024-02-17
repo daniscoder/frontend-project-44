@@ -1,5 +1,5 @@
 import { getRandomInt } from '../helpers.js';
-import index from '../index.js';
+import gameLogic from '../game-logic.js';
 
 const gcd = (a, b) => {
   if (!b) {
@@ -14,7 +14,5 @@ const getQuestion = () => {
 };
 
 export default () => {
-  console.log(
-    index('Find the greatest common divisor of given numbers.', getQuestion),
-  );
+  console.log(gameLogic('Find the greatest common divisor of given numbers.', getQuestion));
 };

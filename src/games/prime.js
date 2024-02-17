@@ -1,5 +1,5 @@
 import { answersNoYes, getRandomInt } from '../helpers.js';
-import index from '../index.js';
+import gameLogic from '../game-logic.js';
 
 const isPrime = (num) => {
   for (let i = 2, s = Math.sqrt(num); i <= s; i += 1) {
@@ -17,9 +17,6 @@ const getQuestion = () => {
 
 export default () => {
   console.log(
-    index(
-      'Answer "yes" if given number is prime. Otherwise answer "no".',
-      getQuestion,
-    ),
+    gameLogic('Answer "yes" if given number is prime. Otherwise answer "no".', getQuestion),
   );
 };

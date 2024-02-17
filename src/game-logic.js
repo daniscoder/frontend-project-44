@@ -14,9 +14,7 @@ export default (gameQuestion, getQuestion) => {
 
     const answer = String(readlineSync.question('Your answer: '));
     if (answer !== correctAnswer) {
-      console.log(
-        `"${answer}" is wrong answer ;(. Correct answer was "${correctAnswer}".`,
-      );
+      console.log(`"${answer}" is wrong answer ;(. Correct answer was "${correctAnswer}".`);
       break;
     }
     console.log('Correct!');

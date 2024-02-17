@@ -1,5 +1,5 @@
 import { operations, getRandomInt } from '../helpers.js';
-import index from '../index.js';
+import gameLogic from '../game-logic.js';
 
 const applyOperation = (a, b, operation) => {
   switch (operation) {
@@ -21,5 +21,5 @@ const getQuestion = () => {
 };
 
 export default () => {
-  console.log(index('What is the result of the expression?', getQuestion));
+  console.log(gameLogic('What is the result of the expression?', getQuestion));
 };

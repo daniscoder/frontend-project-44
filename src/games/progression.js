@@ -1,5 +1,5 @@
 import { getRandomInt } from '../helpers.js';
-import index from '../index.js';
+import gameLogic from '../game-logic.js';
 
 const getQuestion = () => {
   const progression = [getRandomInt(50)];
@@ -15,5 +15,5 @@ const getQuestion = () => {
 };
 
 export default () => {
-  console.log(index('What number is missing in the progression?', getQuestion));
+  console.log(gameLogic('What number is missing in the progression?', getQuestion));
 };
