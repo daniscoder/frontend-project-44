@@ -1,8 +1,9 @@
 import readlineSync from 'readline-sync';
-import cli from './cli.js';
 
 export default (gameQuestion, getQuestion) => {
-  const name = cli();
+  console.log('Welcome to the Brain Games!');
+  const name = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${name}!`);
   console.log(gameQuestion);
 
   const maxRounds = 3;
