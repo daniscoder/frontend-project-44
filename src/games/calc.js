@@ -1,6 +1,8 @@
 import { operations, getRandomInt } from '../helpers.js';
 import gameLogic from '../game-logic.js';
 
+const description = 'What is the result of the expression?';
+
 const applyOperation = (a, b, operation) => {
   switch (operation) {
     case '+':
@@ -21,5 +23,5 @@ const getQuestion = () => {
 };
 
 export default () => {
-  console.log(gameLogic('What is the result of the expression?', getQuestion));
+  console.log(gameLogic(description, getQuestion));
 };

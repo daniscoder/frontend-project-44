@@ -1,11 +1,15 @@
 import { answersNoYes, getRandomInt } from '../helpers.js';
 import gameLogic from '../game-logic.js';
 
+const description = 'Answer "yes" if the number is even, otherwise answer "no".';
+
+const isEven = (randomInt) => randomInt % 2 === 0;
+
 const getQuestion = () => {
   const randomInt = getRandomInt() + 1;
-  return [randomInt, answersNoYes[Number(randomInt % 2 === 0)]];
+  return [randomInt, answersNoYes[Number(isEven(randomInt))]];
 };
 
 export default () => {
-  console.log(gameLogic('Answer "yes" if the number is even, otherwise answer "no".', getQuestion));
+  console.log(gameLogic(description, getQuestion));
 };
