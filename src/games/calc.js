@@ -1,7 +1,9 @@
-import { operations, getRandomInt } from '../helpers.js';
+import { getRandomInt } from '../helpers.js';
 import gameLogic from '../game-logic.js';
 
 const description = 'What is the result of the expression?';
+
+const operations = ['+', '-', '*'];
 
 const applyOperation = (a, b, operation) => {
   switch (operation) {
@@ -19,7 +21,9 @@ const applyOperation = (a, b, operation) => {
 const getQuestion = () => {
   const [a, b] = [getRandomInt(), getRandomInt()];
   const operation = operations[getRandomInt(operations.length)];
-  return [`${a} ${operation} ${b}`, String(applyOperation(a, b, operation))];
+  const question = `${a} ${operation} ${b}`;
+  const correctAnswer = String(applyOperation(a, b, operation));
+  return [question, correctAnswer];
 };
 
 export default () => {

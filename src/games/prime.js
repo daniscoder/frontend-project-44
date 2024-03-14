@@ -14,7 +14,9 @@ const isPrime = (num) => {
 
 const getQuestion = () => {
   const num = getRandomInt() + 1;
-  return [num, answersNoYes[Number(isPrime(num))]];
+  const question = num;
+  const correctAnswer = answersNoYes[Number(isPrime(num))];
+  return [question, correctAnswer];
 };
 
 export default () => {

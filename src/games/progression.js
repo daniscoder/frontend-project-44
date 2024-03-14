@@ -12,8 +12,9 @@ const getQuestion = () => {
   const hiddenElemIndex = getRandomInt(progression.length);
   const hiddenElem = progression[hiddenElemIndex];
   progression[hiddenElemIndex] = '..';
-
-  return [progression.join(' '), String(hiddenElem)];
+  const question = progression.join(' ');
+  const correctAnswer = String(hiddenElem);
+  return [question, correctAnswer];
 };
 
 export default () => {

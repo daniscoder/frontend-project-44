@@ -7,7 +7,9 @@ const isEven = (randomInt) => randomInt % 2 === 0;
 
 const getQuestion = () => {
   const randomInt = getRandomInt() + 1;
-  return [randomInt, answersNoYes[Number(isEven(randomInt))]];
+  const question = randomInt;
+  const correctAnswer = answersNoYes[Number(isEven(randomInt))];
+  return [question, correctAnswer];
 };
 
 export default () => {

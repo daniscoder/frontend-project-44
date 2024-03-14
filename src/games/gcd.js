@@ -12,7 +12,9 @@ const gcd = (a, b) => {
 
 const getQuestion = () => {
   const [a, b] = [getRandomInt(), getRandomInt()];
-  return [`${a} ${b}`, String(gcd(a, b))];
+  const question = `${a} ${b}`;
+  const correctAnswer = String(gcd(a, b));
+  return [question, correctAnswer];
 };
 
 export default () => {
