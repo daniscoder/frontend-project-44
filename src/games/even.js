@@ -6,9 +6,8 @@ const description = 'Answer "yes" if the number is even, otherwise answer "no".'
 const isEven = (randomInt) => randomInt % 2 === 0;
 
 const getQuestion = () => {
-  const randomInt = getRandomInt() + 1;
-  const question = randomInt;
-  const correctAnswer = answersNoYes[Number(isEven(randomInt))];
+  const question = getRandomInt() + 1;
+  const correctAnswer = answersNoYes[Number(isEven(question))];
   return [question, correctAnswer];
 };
 
