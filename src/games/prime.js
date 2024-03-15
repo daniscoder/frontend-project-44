@@ -1,4 +1,4 @@
-import { answersNoYes, getRandomInt } from '../helpers.js';
+import { getQuestionForEvenPrime } from '../helpers.js';
 import gameLogic from '../game-logic.js';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -12,11 +12,7 @@ const isPrime = (num) => {
   return num > 1;
 };
 
-const getQuestion = () => {
-  const question = getRandomInt() + 1;
-  const correctAnswer = answersNoYes[Number(isPrime(question))];
-  return [question, correctAnswer];
-};
+const getQuestion = () => getQuestionForEvenPrime(isPrime);
 
 export default () => {
   console.log(gameLogic(description, getQuestion));
